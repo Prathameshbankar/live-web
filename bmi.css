@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.head{
+    text-align: center;
+    color: white;
+}
+
+.cal{
+    height: 300px;
+    width: 30%;
+    border: 2px solid black;
+    margin-left: 35%;
+    border-radius: 15px;
+    background-color: yellow;
+    
+}
+
+form{
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+.info{
+    text-align: center;
+}
+#results{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .cal{
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+
+    form{
+        margin-left: 10%;
+    }
+    }
