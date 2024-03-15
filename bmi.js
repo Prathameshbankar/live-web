@@ -16,8 +16,26 @@ form.addEventListener('submit', function(e){
 
     else{
        const bmi = (weight / ((height * height) / 10000)).toFixed(2);
-       result.innerHTML = `<span>${bmi}</span>`;
+       if(bmi < 18.5){
+        result.innerHTML = `<span>${bmi} underweight</span>`;
+       }
+       else if(bmi > 18 && bmi < 25){
+        result.innerHTML = `<span>${bmi} healthy</span>`;
+
+       }
+
+       else{
+        result.innerHTML = `<span>${bmi} overweight</span>`;
+       }
+       
     }
     
 
 })
+
+const clock = document.getElementById('clocks')
+
+setInterval(function(){
+    let date = new Date();
+   console.log(clock.innerHTML = date.toLocaleTimeString());
+},1000);

@@ -21,14 +21,31 @@ body{
 
 form{
     margin-left: 30%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
-.info{
-    text-align: center;
+#weight, #height{
+    margin-top: 10px;
 }
+
 #results{
     text-align: center;
+}
+
+.time{
+    color: white;
+}
+
+#clocks{
+    height: 50px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.clock{
+    margin-left: 20%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -41,4 +58,6 @@ form{
     form{
         margin-left: 10%;
     }
+
+    
     }
